@@ -10,7 +10,7 @@ jobs:
   phpunit:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         include:
           - php: '8.2'
@@ -47,6 +47,8 @@ jobs:
             "illuminate/routing:${{ matrix.laravel }}" \
             "illuminate/cache:${{ matrix.laravel }}" \
             "orchestra/testbench:${{ matrix.testbench }}" \
+            "phpunit/phpunit:^11.0" \
+            --dev \
             --no-update
           composer update --prefer-dist --no-interaction
 
