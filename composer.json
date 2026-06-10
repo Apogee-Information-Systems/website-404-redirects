@@ -1,0 +1,48 @@
+{
+    "name": "apogee/website-404-redirects",
+    "description": "Log public 404 paths and manage 301 redirects from a database table (Laravel)",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "404", "redirect", "seo"],
+    "authors": [
+        {
+            "name": "Apogee",
+            "homepage": "https://apogeewatcher.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/cache": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "filament/filament": "^3.0|^4.0",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "suggest": {
+        "filament/filament": "Required for the optional Filament admin resource (^3.0|^4.0)"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apogee\\Website404Redirects\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Apogee\\Website404Redirects\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apogee\\Website404Redirects\\Website404RedirectsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
