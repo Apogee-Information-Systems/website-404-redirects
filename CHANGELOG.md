@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-07-27
+
+### Changed
+
+- Documented the v1.0.0 release notes in this changelog (was incorrectly listed under Unreleased).
+
+## [1.0.0] - 2026-06-11
+
 ### Added
 
 - Initial package extract: core model, migration, services, middleware, 404 logging listener, config, cache observer, and Orchestra Testbench feature tests (P5.1).
@@ -23,3 +31,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 | Breaking config, schema, or **path normalization** behaviour | Major (`2.0.0`) |
 
 Path normalization (`normalize_lowercase`, `max_path_length`, segment rules) affects how rows are deduplicated and matched. Any change that alters how paths are stored or compared must be released as a **major** version and called out here.
+
+[1.0.1]: https://github.com/Apogee-Information-Systems/website-404-redirects/releases/tag/v1.0.1
+[1.0.0]: https://github.com/Apogee-Information-Systems/website-404-redirects/releases/tag/v1.0.0
